@@ -1,0 +1,220 @@
+
+Call:
+   felm(formula = FVC ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:ClimateZone + WaterDeficit_2:ClimateZone + urban:ClimateZone +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:ClimateZone +      WaterDeficit_2:urban:ClimateZone + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57866 -0.03690 -0.00099  0.03652  0.63801 
+
+Coefficients:
+                                             Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                               -5.936e-04    5.233e-05 -11.343  < 2e-16 ***
+WaterDeficit_2                              1.520e-07    2.848e-08   5.336 9.74e-08 ***
+urbanin                                    -1.812e-01    1.139e-02 -15.911  < 2e-16 ***
+Seasonalityindex                           -3.399e-01    1.551e-01  -2.192 0.028385 *  
+AverageTemperature                          2.704e-03    2.069e-03   1.307 0.191255    
+TemperatureRange                            1.235e-02    1.809e-03   6.826 9.33e-12 ***
+WindSpeed                                   1.409e-02    5.347e-03   2.636 0.008405 ** 
+Elevation                                   4.168e-05    1.246e-05   3.345 0.000826 ***
+Latitude                                   -1.987e-04    5.003e-03  -0.040 0.968324    
+Precipitation                               1.719e-05    1.237e-05   1.390 0.164525    
+SoilMoisture                                2.781e-05    8.992e-06   3.093 0.001986 ** 
+SoilPH                                     -3.877e-03    8.715e-05 -44.491  < 2e-16 ***
+GDP_per_capita_PPP                          1.219e-08    6.257e-08   0.195 0.845527    
+HDI                                         2.677e-01    1.417e-02  18.894  < 2e-16 ***
+Population                                 -4.181e-06    7.879e-07  -5.306 1.15e-07 ***
+ImperviousSurface                          -9.296e-02    1.619e-02  -5.741 9.71e-09 ***
+HumanSettlement                            -8.346e-09    2.803e-08  -0.298 0.765888    
+CityArea                                    1.186e-05    1.400e-05   0.847 0.396914    
+WaterDeficit:ClimateZoneTropical            3.475e-04    9.213e-05   3.772 0.000163 ***
+WaterDeficit:ClimateZoneCold                8.934e-05    6.807e-05   1.312 0.189443    
+WaterDeficit:ClimateZoneArid                2.660e-04    6.536e-05   4.069 4.76e-05 ***
+WaterDeficit_2:ClimateZoneTropical         -2.886e-07    7.453e-08  -3.873 0.000108 ***
+WaterDeficit_2:ClimateZoneCold              1.089e-07    7.474e-08   1.457 0.145048    
+WaterDeficit_2:ClimateZoneArid             -1.191e-07    3.212e-08  -3.707 0.000211 ***
+urbanin:ClimateZoneTropical                -1.765e-01    1.451e-02 -12.163  < 2e-16 ***
+urbanin:ClimateZoneCold                     1.234e-01    9.840e-03  12.538  < 2e-16 ***
+urbanin:ClimateZoneArid                     2.435e-01    2.335e-02  10.429  < 2e-16 ***
+WaterDeficit:urbanin                        2.844e-04    3.048e-05   9.330  < 2e-16 ***
+WaterDeficit_2:urbanin                      9.734e-09    2.738e-08   0.355 0.722256    
+WaterDeficit:urbanin:ClimateZoneTropical    7.409e-05    6.360e-05   1.165 0.244071    
+WaterDeficit:urbanin:ClimateZoneCold        1.476e-04    5.870e-05   2.515 0.011910 *  
+WaterDeficit:urbanin:ClimateZoneArid       -1.231e-04    4.697e-05  -2.620 0.008812 ** 
+WaterDeficit_2:urbanin:ClimateZoneTropical  1.135e-07    5.465e-08   2.077 0.037820 *  
+WaterDeficit_2:urbanin:ClimateZoneCold     -1.746e-07    6.928e-08  -2.520 0.011753 *  
+WaterDeficit_2:urbanin:ClimateZoneArid     -3.198e-08    3.022e-08  -1.058 0.289896    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0711 on 284779 degrees of freedom
+Multiple R-squared(full model): 0.8675   Adjusted R-squared: 0.8635 
+Multiple R-squared(proj model): 0.4122   Adjusted R-squared: 0.3943 
+F-statistic(full model, *iid*):215.4 on 8661 and 284779 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 62.22 on 35 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = FVC ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:ClimateZone + Seasonalityindex_2:ClimateZone +      urban:ClimateZone + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:ClimateZone + Seasonalityindex_2:urban:ClimateZone +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.54277 -0.03592 -0.00184  0.03462  0.68050 
+
+Coefficients:
+                                                 Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                               -1.446e+00    8.132e-01  -1.778 0.075381 .  
+Seasonalityindex_2                             -1.605e+00    5.703e+00  -0.281 0.778364    
+urbanin                                        -3.626e-02    1.148e-02  -3.158 0.001596 ** 
+WaterDeficit                                   -3.372e-04    2.849e-05 -11.833  < 2e-16 ***
+AverageTemperature                              9.020e-03    1.654e-03   5.454 5.13e-08 ***
+TemperatureRange                                8.456e-03    1.974e-03   4.285 1.86e-05 ***
+WindSpeed                                       3.285e-02    6.886e-03   4.771 1.88e-06 ***
+Elevation                                       7.461e-07    1.193e-05   0.063 0.950148    
+Latitude                                       -2.584e-03    5.627e-03  -0.459 0.646143    
+Precipitation                                   2.178e-06    2.543e-05   0.086 0.931761    
+SoilMoisture                                    5.565e-05    1.332e-05   4.180 2.96e-05 ***
+SoilPH                                         -3.883e-03    1.133e-04 -34.287  < 2e-16 ***
+GDP_per_capita_PPP                              4.598e-08    7.027e-08   0.654 0.512967    
+HDI                                             1.980e-01    1.839e-02  10.769  < 2e-16 ***
+Population                                     -8.354e-06    1.444e-06  -5.786 7.54e-09 ***
+ImperviousSurface                              -8.155e-02    1.825e-02  -4.467 8.05e-06 ***
+HumanSettlement                                -1.512e-08    3.867e-08  -0.391 0.695839    
+CityArea                                        2.282e-05    2.353e-05   0.970 0.332144    
+Seasonalityindex:ClimateZoneTropical            4.700e+00    1.954e+00   2.405 0.016194 *  
+Seasonalityindex:ClimateZoneCold                3.978e+00    1.162e+00   3.423 0.000624 ***
+Seasonalityindex:ClimateZoneArid                1.369e+00    1.069e+00   1.281 0.200320    
+Seasonalityindex_2:ClimateZoneTropical         -2.706e+01    1.376e+01  -1.967 0.049267 *  
+Seasonalityindex_2:ClimateZoneCold             -3.081e+01    1.295e+01  -2.379 0.017382 *  
+Seasonalityindex_2:ClimateZoneArid             -3.997e+00    1.075e+01  -0.372 0.710180    
+urbanin:ClimateZoneTropical                    -2.157e-01    3.708e-02  -5.817 6.30e-09 ***
+urbanin:ClimateZoneCold                         4.233e-02    6.858e-03   6.172 7.17e-10 ***
+urbanin:ClimateZoneArid                         2.845e-01    7.928e-03  35.885  < 2e-16 ***
+Seasonalityindex:urbanin                        1.937e+00    4.359e-01   4.445 8.94e-06 ***
+Seasonalityindex_2:urbanin                     -5.347e+00    5.836e+00  -0.916 0.359561    
+Seasonalityindex:urbanin:ClimateZoneTropical    7.049e+00    1.418e+00   4.970 6.89e-07 ***
+Seasonalityindex:urbanin:ClimateZoneCold        6.788e+00    1.106e+00   6.139 8.84e-10 ***
+Seasonalityindex:urbanin:ClimateZoneArid       -5.305e+00    7.705e-01  -6.885 6.35e-12 ***
+Seasonalityindex_2:urbanin:ClimateZoneTropical -4.438e+01    1.255e+01  -3.535 0.000410 ***
+Seasonalityindex_2:urbanin:ClimateZoneCold     -1.695e+02    2.576e+01  -6.581 5.05e-11 ***
+Seasonalityindex_2:urbanin:ClimateZoneArid      4.475e+01    1.157e+01   3.867 0.000111 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07158 on 210652 degrees of freedom
+Multiple R-squared(full model): 0.8476   Adjusted R-squared: 0.8431 
+Multiple R-squared(proj model): 0.2646   Adjusted R-squared: 0.2428 
+F-statistic(full model, *iid*):  188 on 6233 and 210652 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 95.89 on 35 and 6194 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:ClimateZone + WaterDeficit_2:ClimateZone + urban:ClimateZone +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:ClimateZone +      WaterDeficit_2:urban:ClimateZone + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-734.87  -52.24   -1.66   50.99  759.15 
+
+Coefficients:
+                                             Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                               -9.449e-01    8.695e-02 -10.867  < 2e-16 ***
+WaterDeficit_2                              2.137e-04    4.899e-05   4.362 1.30e-05 ***
+urbanin                                    -4.404e+02    7.878e+00 -55.903  < 2e-16 ***
+Seasonalityindex                           -6.362e+02    2.680e+02  -2.374 0.017632 *  
+AverageTemperature                          2.014e+00    1.477e+00   1.363 0.172826    
+TemperatureRange                            1.638e+01    2.400e+00   6.823 9.54e-12 ***
+WindSpeed                                   4.474e+01    7.548e+00   5.927 3.21e-09 ***
+Elevation                                   2.072e-02    1.306e-02   1.587 0.112490    
+Latitude                                   -1.212e+01    6.551e+00  -1.849 0.064430 .  
+Precipitation                              -4.213e-03    2.043e-02  -0.206 0.836611    
+SoilMoisture                                1.205e-02    1.360e-02   0.886 0.375609    
+SoilPH                                     -4.004e+00    1.246e-01 -32.137  < 2e-16 ***
+GDP_per_capita_PPP                         -4.123e-04    6.460e-05  -6.382 1.84e-10 ***
+HDI                                         4.599e+02    1.942e+01  23.686  < 2e-16 ***
+Population                                 -6.938e-03    7.543e-04  -9.197  < 2e-16 ***
+ImperviousSurface                           1.620e+02    9.971e+00  16.245  < 2e-16 ***
+HumanSettlement                            -8.915e-05    2.176e-05  -4.097 4.23e-05 ***
+CityArea                                    9.320e-03    1.355e-02   0.688 0.491723    
+WaterDeficit:ClimateZoneTropical            1.629e-01    1.884e-01   0.865 0.387291    
+WaterDeficit:ClimateZoneCold                5.556e-02    1.060e-01   0.524 0.600208    
+WaterDeficit:ClimateZoneArid                4.517e-01    1.051e-01   4.298 1.74e-05 ***
+WaterDeficit_2:ClimateZoneTropical         -1.734e-04    1.305e-04  -1.329 0.183844    
+WaterDeficit_2:ClimateZoneCold              1.655e-04    9.885e-05   1.674 0.094214 .  
+WaterDeficit_2:ClimateZoneArid             -2.049e-04    5.320e-05  -3.852 0.000118 ***
+urbanin:ClimateZoneTropical                -1.644e+02    1.631e+01 -10.080  < 2e-16 ***
+urbanin:ClimateZoneCold                     5.780e+01    7.342e+00   7.872 3.90e-15 ***
+urbanin:ClimateZoneArid                     2.078e+02    1.370e+01  15.166  < 2e-16 ***
+WaterDeficit:urbanin                        1.903e-01    2.704e-02   7.037 2.12e-12 ***
+WaterDeficit_2:urbanin                      1.664e-05    2.219e-05   0.750 0.453471    
+WaterDeficit:urbanin:ClimateZoneTropical    3.045e-01    6.244e-02   4.876 1.10e-06 ***
+WaterDeficit:urbanin:ClimateZoneCold        2.200e-01    4.111e-02   5.352 8.93e-08 ***
+WaterDeficit:urbanin:ClimateZoneArid       -1.264e-01    3.318e-02  -3.811 0.000139 ***
+WaterDeficit_2:urbanin:ClimateZoneTropical -1.069e-04    4.812e-05  -2.221 0.026375 *  
+WaterDeficit_2:urbanin:ClimateZoneCold     -2.269e-04    4.437e-05  -5.114 3.22e-07 ***
+WaterDeficit_2:urbanin:ClimateZoneArid     -1.014e-05    2.310e-05  -0.439 0.660775    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 90.32 on 284779 degrees of freedom
+Multiple R-squared(full model): 0.8842   Adjusted R-squared: 0.8807 
+Multiple R-squared(proj model): 0.5044   Adjusted R-squared: 0.4893 
+F-statistic(full model, *iid*):251.1 on 8661 and 284779 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 330.5 on 35 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:ClimateZone + Seasonalityindex_2:ClimateZone +      urban:ClimateZone + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:ClimateZone + Seasonalityindex_2:urban:ClimateZone +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-730.62  -49.03   -2.48   47.72  769.21 
+
+Coefficients:
+                                                 Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                               -1.405e+03    1.205e+03  -1.166 0.243577    
+Seasonalityindex_2                             -1.070e+04    8.011e+03  -1.336 0.181610    
+urbanin                                        -3.340e+02    7.495e+00 -44.566  < 2e-16 ***
+WaterDeficit                                   -5.499e-01    3.291e-02 -16.709  < 2e-16 ***
+AverageTemperature                              7.986e+00    1.618e+00   4.935 8.24e-07 ***
+TemperatureRange                                1.076e+01    2.552e+00   4.215 2.53e-05 ***
+WindSpeed                                       6.472e+01    9.255e+00   6.993 2.97e-12 ***
+Elevation                                      -3.602e-02    1.372e-02  -2.625 0.008679 ** 
+Latitude                                       -1.917e+01    7.215e+00  -2.657 0.007895 ** 
+Precipitation                                  -5.354e-02    3.222e-02  -1.662 0.096568 .  
+SoilMoisture                                    6.342e-02    1.539e-02   4.121 3.82e-05 ***
+SoilPH                                         -3.993e+00    1.475e-01 -27.064  < 2e-16 ***
+GDP_per_capita_PPP                             -2.475e-04    5.220e-05  -4.740 2.18e-06 ***
+HDI                                             3.255e+02    2.171e+01  14.993  < 2e-16 ***
+Population                                     -9.055e-03    1.329e-03  -6.814 1.04e-11 ***
+ImperviousSurface                               1.396e+02    1.081e+01  12.910  < 2e-16 ***
+HumanSettlement                                -3.710e-05    2.810e-05  -1.321 0.186693    
+CityArea                                        1.600e-02    2.183e-02   0.733 0.463419    
+Seasonalityindex:ClimateZoneTropical            6.398e+03    3.037e+03   2.106 0.035206 *  
+Seasonalityindex:ClimateZoneCold                4.894e+03    1.629e+03   3.004 0.002678 ** 
+Seasonalityindex:ClimateZoneArid                2.473e+03    1.530e+03   1.617 0.106017    
+Seasonalityindex_2:ClimateZoneTropical         -2.660e+04    2.105e+04  -1.264 0.206320    
+Seasonalityindex_2:ClimateZoneCold             -4.538e+04    1.840e+04  -2.466 0.013706 *  
+Seasonalityindex_2:ClimateZoneArid             -5.743e+02    1.369e+04  -0.042 0.966545    
+urbanin:ClimateZoneTropical                    -1.290e+02    3.493e+01  -3.693 0.000224 ***
+urbanin:ClimateZoneCold                         2.883e+01    5.445e+00   5.295 1.23e-07 ***
+urbanin:ClimateZoneArid                         2.348e+02    5.640e+00  41.634  < 2e-16 ***
+Seasonalityindex:urbanin                        9.480e+02    4.042e+02   2.346 0.019033 *  
+Seasonalityindex_2:urbanin                     -1.077e+03    4.735e+03  -0.227 0.820062    
+Seasonalityindex:urbanin:ClimateZoneTropical    5.681e+03    1.191e+03   4.771 1.88e-06 ***
+Seasonalityindex:urbanin:ClimateZoneCold        2.930e+03    7.017e+02   4.175 3.02e-05 ***
+Seasonalityindex:urbanin:ClimateZoneArid       -5.027e+03    5.497e+02  -9.146  < 2e-16 ***
+Seasonalityindex_2:urbanin:ClimateZoneTropical -3.609e+04    9.661e+03  -3.736 0.000189 ***
+Seasonalityindex_2:urbanin:ClimateZoneCold     -6.450e+04    1.498e+04  -4.306 1.69e-05 ***
+Seasonalityindex_2:urbanin:ClimateZoneArid      4.898e+04    7.266e+03   6.740 1.72e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.45 on 210652 degrees of freedom
+Multiple R-squared(full model): 0.8781   Adjusted R-squared: 0.8745 
+Multiple R-squared(proj model): 0.3967   Adjusted R-squared: 0.3788 
+F-statistic(full model, *iid*):243.4 on 6233 and 210652 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 212.1 on 35 and 6194 DF, p-value: < 2.2e-16 
+
+
