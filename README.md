@@ -56,9 +56,17 @@ library(stargazer)
 library(tidyr)
 
 ```
-## The Urban Tree Canopy Cover in Brazil
-The datasets are freely accessible at [Here](https://doi.org/10.7910/DVN/DC6IKI).
-
+## The datasets utilized in this study are as follows:
+[FVC and NPP datasets](https://www.glass.hku.hk/archive/). 
+[City boundary dataset](https://data-starcloud.pcl.ac.cn/iearthdata/14). 
+[Impervious surface dataset](http://irsip.whu.edu.cn/resv2/dataweb2.php). 
+[TerraClimate dataset](https://www.climatologylab.org/terraclimate.html). 
+[Digital elevation map](http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM). 
+[Soil dataset](https://www.fao.org/soils-portal/data-hub/). 
+[GDP dataset](https://databank.worldbank.org/). 
+[HDI dataset](https://hdr.undp.org/data-center/). 
+[Population density dataset](https://hub.worldpop.org/project/categories?id=18). 
+[Human settlement dataset](https://human-settlement.emergency.copernicus.eu). 
 
 ## Acknowledgement
 
