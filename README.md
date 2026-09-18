@@ -2,7 +2,7 @@
 These are the codes that were used to quantify hydroclimatic and geographic stress mitigation by urbanization for global urban green spaces
 
 ## Results
-![](/fig.png)
+![](/fig.jpg)
 
 
 ## Package pre-requisites
@@ -71,7 +71,7 @@ Our ideas may partly come from the papers:
 
 ## Citation
 
-Jianhua Guo†,*, Bowei Yu†,*, Jianghao Wang, Zhongchang Sun, Dong Liang, and Huadong Guo1*. "Quantifying hydroclimatic and geographic stress mitigation by urbanization for global urban green space." Submitted to Nature cities, 2026
+Jianhua Guo†,*, Bowei Yu†,*, Jianghao Wang, Zhongchang Sun, Dong Liang, and Huadong Guo1*. "Urban environments buffer vegetation structure but not ecosystem functioning under hydroclimatic stress." Submitted to Nature XXX, Sep 2026
 
 
 
