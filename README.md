@@ -1,6 +1,8 @@
 # hydroclimatic_geographic_stress_mitigation
 These are the codes that were used to quantify hydroclimatic and geographic stress mitigation by urbanization for global urban green spaces
 
+The data sources for this study are available at [A global dataset of urban vegetation structure and ecosystem functioning]([https://doi.org/10.7910/DVN/DC6IKI](https://figshare.com/articles/dataset/_b_A_global_dataset_of_urban_vegetation_structure_and_ecosystem_functioning_b_/33919303)).
+
 ## Results
 ![](/fig.jpg)
 
