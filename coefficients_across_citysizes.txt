@@ -1,0 +1,200 @@
+
+Call:
+   felm(formula = FVC ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:CitySize + WaterDeficit_2:CitySize + urban:CitySize +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:CitySize +      WaterDeficit_2:urban:CitySize + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.73843 -0.03850 -0.00152  0.03773  0.68697 
+
+Coefficients:
+                                        Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                          -3.210e-04    3.522e-05  -9.114  < 2e-16 ***
+WaterDeficit_2                         3.844e-08    1.054e-08   3.648 0.000266 ***
+urbanin                               -1.109e-01    1.149e-02  -9.653  < 2e-16 ***
+Seasonalityindex                      -3.218e-01    1.701e-01  -1.892 0.058568 .  
+AverageTemperature                     4.274e-03    2.805e-03   1.524 0.127641    
+TemperatureRange                       1.069e-02    1.837e-03   5.818 6.17e-09 ***
+WindSpeed                              5.028e-03    5.396e-03   0.932 0.351408    
+Elevation                              5.627e-05    1.528e-05   3.681 0.000233 ***
+Latitude                               3.369e-03    5.173e-03   0.651 0.514939    
+Precipitation                          3.871e-05    1.422e-05   2.723 0.006486 ** 
+SoilMoisture                           4.348e-05    9.326e-06   4.662 3.18e-06 ***
+SoilPH                                -3.949e-03    8.753e-05 -45.114  < 2e-16 ***
+GDP_per_capita_PPP                    -8.813e-09    6.346e-08  -0.139 0.889559    
+HDI                                    2.663e-01    1.412e-02  18.855  < 2e-16 ***
+Population                            -8.463e-06    1.001e-06  -8.454  < 2e-16 ***
+ImperviousSurface                     -5.643e-02    1.763e-02  -3.201 0.001376 ** 
+HumanSettlement                       -3.190e-07    3.104e-08 -10.277  < 2e-16 ***
+CityArea                              -9.641e-06    1.187e-05  -0.812 0.416606    
+WaterDeficit:CitySizeMedium           -2.842e-05    6.459e-06  -4.400 1.10e-05 ***
+WaterDeficit:CitySizeLarge            -4.214e-05    1.548e-05  -2.723 0.006481 ** 
+WaterDeficit_2:CitySizeMedium          9.861e-09    3.961e-09   2.489 0.012822 *  
+WaterDeficit_2:CitySizeLarge           1.639e-08    1.058e-08   1.549 0.121367    
+urbanin:CitySizeMedium                 2.884e-02    1.334e-02   2.162 0.030625 *  
+urbanin:CitySizeLarge                  2.270e-02    2.559e-02   0.887 0.374989    
+WaterDeficit:urbanin                   3.782e-04    1.030e-05  36.725  < 2e-16 ***
+WaterDeficit_2:urbanin                -8.312e-08    5.381e-09 -15.448  < 2e-16 ***
+WaterDeficit:urbanin:CitySizeMedium    2.511e-05    3.454e-05   0.727 0.467248    
+WaterDeficit:urbanin:CitySizeLarge     2.444e-05    6.666e-05   0.367 0.713936    
+WaterDeficit_2:urbanin:CitySizeMedium -1.509e-08    1.625e-08  -0.929 0.353050    
+WaterDeficit_2:urbanin:CitySizeLarge  -1.219e-08    3.180e-08  -0.383 0.701457    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07589 on 284784 degrees of freedom
+Multiple R-squared(full model): 0.8491   Adjusted R-squared: 0.8445 
+Multiple R-squared(proj model): 0.3303   Adjusted R-squared:  0.31 
+F-statistic(full model, *iid*):185.1 on 8656 and 284784 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 39.69 on 30 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = FVC ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:CitySize + Seasonalityindex_2:CitySize +      urban:CitySize + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:CitySize + Seasonalityindex_2:urban:CitySize +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.66266 -0.03920 -0.00333  0.03734  0.71669 
+
+Coefficients:
+                                            Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                          -1.024e-01    4.632e-01  -0.221 0.825085    
+Seasonalityindex_2                        -8.620e+00    3.857e+00  -2.235 0.025454 *  
+urbanin                                    9.595e-02    1.144e-02   8.386  < 2e-16 ***
+WaterDeficit                              -3.504e-04    2.952e-05 -11.870  < 2e-16 ***
+AverageTemperature                         7.473e-03    1.938e-03   3.857 0.000116 ***
+TemperatureRange                           8.349e-03    2.060e-03   4.053 5.12e-05 ***
+WindSpeed                                  3.668e-02    7.296e-03   5.028 5.09e-07 ***
+Elevation                                 -1.732e-05    1.323e-05  -1.310 0.190377    
+Latitude                                  -6.372e-03    5.762e-03  -1.106 0.268816    
+Precipitation                             -3.117e-05    2.677e-05  -1.165 0.244217    
+SoilMoisture                               8.214e-05    1.373e-05   5.980 2.35e-09 ***
+SoilPH                                    -3.882e-03    1.179e-04 -32.915  < 2e-16 ***
+GDP_per_capita_PPP                         1.914e-08    6.885e-08   0.278 0.781021    
+HDI                                        1.929e-01    1.754e-02  10.997  < 2e-16 ***
+Population                                -1.102e-05    1.944e-06  -5.666 1.52e-08 ***
+ImperviousSurface                         -2.058e-02    1.883e-02  -1.093 0.274452    
+HumanSettlement                           -4.205e-07    4.667e-08  -9.010  < 2e-16 ***
+CityArea                                  -3.278e-06    2.344e-05  -0.140 0.888801    
+Seasonalityindex:CitySizeMedium           -7.533e-01    3.001e-01  -2.510 0.012093 *  
+Seasonalityindex:CitySizeLarge            -1.089e+00    5.528e-01  -1.970 0.048868 *  
+Seasonalityindex_2:CitySizeMedium          1.024e+01    6.518e+00   1.571 0.116346    
+Seasonalityindex_2:CitySizeLarge           1.968e+01    1.340e+01   1.468 0.142160    
+urbanin:CitySizeMedium                     6.124e-02    1.426e-02   4.295 1.78e-05 ***
+urbanin:CitySizeLarge                      7.867e-02    3.245e-02   2.425 0.015352 *  
+Seasonalityindex:urbanin                   1.999e+00    3.117e-01   6.413 1.53e-10 ***
+Seasonalityindex_2:urbanin                -1.768e+01    4.023e+00  -4.394 1.13e-05 ***
+Seasonalityindex:urbanin:CitySizeMedium   -2.654e-01    1.136e+00  -0.234 0.815250    
+Seasonalityindex:urbanin:CitySizeLarge    -7.255e-01    2.449e+00  -0.296 0.767018    
+Seasonalityindex_2:urbanin:CitySizeMedium  7.258e+00    1.716e+01   0.423 0.672391    
+Seasonalityindex_2:urbanin:CitySizeLarge  -2.601e+01    3.735e+01  -0.696 0.486223    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07845 on 210657 degrees of freedom
+Multiple R-squared(full model): 0.817   Adjusted R-squared: 0.8116 
+Multiple R-squared(proj model): 0.1167   Adjusted R-squared: 0.09054 
+F-statistic(full model, *iid*):  151 on 6228 and 210657 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 23.63 on 30 and 6194 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:CitySize + WaterDeficit_2:CitySize + urban:CitySize +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:CitySize +      WaterDeficit_2:urban:CitySize + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-725.39  -52.94   -2.05   51.77  789.06 
+
+Coefficients:
+                                        Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                          -6.318e-01    4.732e-02 -13.353  < 2e-16 ***
+WaterDeficit_2                         6.850e-05    1.405e-05   4.877 1.09e-06 ***
+urbanin                               -4.036e+02    7.262e+00 -55.579  < 2e-16 ***
+Seasonalityindex                      -7.715e+02    2.834e+02  -2.723  0.00649 ** 
+AverageTemperature                     3.067e+00    1.905e+00   1.610  0.10746    
+TemperatureRange                       1.482e+01    2.431e+00   6.097 1.13e-09 ***
+WindSpeed                              3.815e+01    7.440e+00   5.128 3.00e-07 ***
+Elevation                              2.946e-02    1.430e-02   2.060  0.03939 *  
+Latitude                              -9.072e+00    6.612e+00  -1.372  0.17006    
+Precipitation                          2.417e-02    2.135e-02   1.133  0.25746    
+SoilMoisture                           3.014e-02    1.331e-02   2.264  0.02358 *  
+SoilPH                                -4.054e+00    1.244e-01 -32.594  < 2e-16 ***
+GDP_per_capita_PPP                    -4.155e-04    6.369e-05  -6.524 7.25e-11 ***
+HDI                                    4.566e+02    1.899e+01  24.048  < 2e-16 ***
+Population                            -9.438e-03    8.928e-04 -10.571  < 2e-16 ***
+ImperviousSurface                      1.849e+02    1.121e+01  16.491  < 2e-16 ***
+HumanSettlement                       -2.851e-04    2.369e-05 -12.035  < 2e-16 ***
+CityArea                              -1.237e-02    1.348e-02  -0.917  0.35909    
+WaterDeficit:CitySizeMedium           -2.273e-02    8.967e-03  -2.535  0.01127 *  
+WaterDeficit:CitySizeLarge            -8.700e-03    2.158e-02  -0.403  0.68678    
+WaterDeficit_2:CitySizeMedium          3.778e-06    5.498e-06   0.687  0.49194    
+WaterDeficit_2:CitySizeLarge          -1.358e-05    1.373e-05  -0.989  0.32259    
+urbanin:CitySizeMedium                 9.128e+00    1.071e+01   0.852  0.39401    
+urbanin:CitySizeLarge                  8.231e+00    2.462e+01   0.334  0.73811    
+WaterDeficit:urbanin                   2.941e-01    6.898e-03  42.639  < 2e-16 ***
+WaterDeficit_2:urbanin                -6.376e-05    3.243e-06 -19.661  < 2e-16 ***
+WaterDeficit:urbanin:CitySizeMedium    2.769e-02    2.645e-02   1.047  0.29516    
+WaterDeficit:urbanin:CitySizeLarge     4.048e-02    6.208e-02   0.652  0.51436    
+WaterDeficit_2:urbanin:CitySizeMedium -1.421e-05    1.182e-05  -1.202  0.22958    
+WaterDeficit_2:urbanin:CitySizeLarge  -6.492e-06    2.854e-05  -0.227  0.82007    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 91.98 on 284784 degrees of freedom
+Multiple R-squared(full model): 0.8799   Adjusted R-squared: 0.8763 
+Multiple R-squared(proj model): 0.486   Adjusted R-squared: 0.4703 
+F-statistic(full model, *iid*):241.1 on 8656 and 284784 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 303.7 on 30 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:CitySize + Seasonalityindex_2:CitySize +      urban:CitySize + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:CitySize + Seasonalityindex_2:urban:CitySize +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-763.97  -52.34   -4.25   51.28  765.51 
+
+Coefficients:
+                                            Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                           7.418e+02    6.233e+02   1.190 0.234034    
+Seasonalityindex_2                        -1.933e+04    5.006e+03  -3.862 0.000113 ***
+urbanin                                   -2.338e+02    7.667e+00 -30.489  < 2e-16 ***
+WaterDeficit                              -5.650e-01    3.343e-02 -16.903  < 2e-16 ***
+AverageTemperature                         6.517e+00    1.866e+00   3.493 0.000480 ***
+TemperatureRange                           1.082e+01    2.606e+00   4.151 3.36e-05 ***
+WindSpeed                                  6.867e+01    9.419e+00   7.291 3.47e-13 ***
+Elevation                                 -5.232e-02    1.473e-02  -3.552 0.000385 ***
+Latitude                                  -2.275e+01    7.287e+00  -3.123 0.001801 ** 
+Precipitation                             -8.807e-02    3.292e-02  -2.675 0.007486 ** 
+SoilMoisture                               8.659e-02    1.568e-02   5.522 3.49e-08 ***
+SoilPH                                    -3.979e+00    1.507e-01 -26.405  < 2e-16 ***
+GDP_per_capita_PPP                        -2.632e-04    5.383e-05  -4.888 1.04e-06 ***
+HDI                                        3.205e+02    2.111e+01  15.183  < 2e-16 ***
+Population                                -1.060e-02    1.754e-03  -6.047 1.56e-09 ***
+ImperviousSurface                          1.916e+02    1.277e+01  15.003  < 2e-16 ***
+HumanSettlement                           -3.681e-04    3.534e-05 -10.416  < 2e-16 ***
+CityArea                                  -7.955e-03    2.040e-02  -0.390 0.696576    
+Seasonalityindex:CitySizeMedium           -3.209e+02    4.064e+02  -0.790 0.429728    
+Seasonalityindex:CitySizeLarge            -1.352e+02    7.766e+02  -0.174 0.861805    
+Seasonalityindex_2:CitySizeMedium          6.091e+03    9.084e+03   0.671 0.502563    
+Seasonalityindex_2:CitySizeLarge           1.164e+04    2.054e+04   0.567 0.570956    
+urbanin:CitySizeMedium                     4.914e+01    1.081e+01   4.547 5.55e-06 ***
+urbanin:CitySizeLarge                      8.797e+01    3.099e+01   2.839 0.004539 ** 
+Seasonalityindex:urbanin                   9.160e+02    2.304e+02   3.975 7.11e-05 ***
+Seasonalityindex_2:urbanin                -5.716e+03    2.748e+03  -2.080 0.037577 *  
+Seasonalityindex:urbanin:CitySizeMedium   -7.939e+02    8.462e+02  -0.938 0.348190    
+Seasonalityindex:urbanin:CitySizeLarge    -2.670e+03    2.405e+03  -1.110 0.267061    
+Seasonalityindex_2:urbanin:CitySizeMedium  1.154e+04    1.136e+04   1.016 0.309719    
+Seasonalityindex_2:urbanin:CitySizeLarge   9.993e+03    3.616e+04   0.276 0.782262    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 89.49 on 210657 degrees of freedom
+Multiple R-squared(full model): 0.8663   Adjusted R-squared: 0.8623 
+Multiple R-squared(proj model): 0.3382   Adjusted R-squared: 0.3187 
+F-statistic(full model, *iid*):219.1 on 6228 and 210657 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 105.8 on 30 and 6194 DF, p-value: < 2.2e-16 
+
+

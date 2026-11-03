@@ -1,0 +1,260 @@
+
+Call:
+   felm(formula = FVC ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:country + WaterDeficit_2:country + urban:country +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:country +      WaterDeficit_2:urban:country + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.71094 -0.03819 -0.00128  0.03693  0.70559 
+
+Coefficients:
+                                       Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                         -2.729e-04    7.290e-05  -3.744 0.000182 ***
+WaterDeficit_2                        2.334e-09    3.074e-08   0.076 0.939465    
+urbanin                              -1.370e-01    1.293e-02 -10.597  < 2e-16 ***
+Seasonalityindex                     -2.753e-01    1.820e-01  -1.513 0.130259    
+AverageTemperature                    4.586e-03    2.919e-03   1.571 0.116190    
+TemperatureRange                      1.016e-02    1.878e-03   5.411 6.42e-08 ***
+WindSpeed                             4.558e-03    5.505e-03   0.828 0.407643    
+Elevation                             5.707e-05    1.590e-05   3.589 0.000334 ***
+Latitude                              5.574e-03    5.169e-03   1.078 0.280892    
+Precipitation                         3.650e-05    1.484e-05   2.460 0.013917 *  
+SoilMoisture                          3.804e-05    9.479e-06   4.013 6.04e-05 ***
+SoilPH                               -3.930e-03    8.670e-05 -45.327  < 2e-16 ***
+GDP_per_capita_PPP                   -6.264e-09    6.308e-08  -0.099 0.920900    
+HDI                                   2.368e-01    1.570e-02  15.085  < 2e-16 ***
+Population                           -5.339e-06    9.715e-07  -5.495 4.01e-08 ***
+ImperviousSurface                    -1.128e-02    1.730e-02  -0.652 0.514408    
+HumanSettlement                      -3.282e-07    3.121e-08 -10.517  < 2e-16 ***
+CityArea                              1.583e-05    1.147e-05   1.381 0.167434    
+WaterDeficit:countryEurope           -2.283e-04    9.850e-05  -2.317 0.020508 *  
+WaterDeficit:countryChina             1.309e-04    9.966e-05   1.313 0.189085    
+WaterDeficit:countryIndia            -6.698e-05    3.760e-04  -0.178 0.858615    
+WaterDeficit:countryBrazil            1.466e-04    1.131e-04   1.296 0.195102    
+WaterDeficit:countryother            -1.618e-04    7.501e-05  -2.157 0.031020 *  
+WaterDeficit_2:countryEurope          1.712e-07    1.240e-07   1.380 0.167547    
+WaterDeficit_2:countryChina          -5.211e-08    7.164e-08  -0.727 0.467017    
+WaterDeficit_2:countryIndia          -6.666e-08    1.674e-07  -0.398 0.690434    
+WaterDeficit_2:countryBrazil         -6.298e-09    7.775e-08  -0.081 0.935437    
+WaterDeficit_2:countryother           8.215e-08    3.286e-08   2.500 0.012433 *  
+urbanin:countryEurope                -1.664e-02    1.042e-02  -1.597 0.110203    
+urbanin:countryChina                 -1.026e-01    1.138e-02  -9.015  < 2e-16 ***
+urbanin:countryIndia                  5.335e-02    7.568e-02   0.705 0.480846    
+urbanin:countryBrazil                -1.045e-01    1.371e-02  -7.617 2.87e-14 ***
+urbanin:countryother                  3.994e-03    1.059e-02   0.377 0.705965    
+WaterDeficit:urbanin                  3.656e-04    2.388e-05  15.310  < 2e-16 ***
+WaterDeficit_2:urbanin               -9.880e-08    1.285e-08  -7.688 1.66e-14 ***
+WaterDeficit:urbanin:countryEurope    4.124e-04    5.557e-05   7.420 1.28e-13 ***
+WaterDeficit:urbanin:countryChina     4.501e-04    4.370e-05  10.299  < 2e-16 ***
+WaterDeficit:urbanin:countryIndia    -2.667e-04    1.581e-04  -1.686 0.091737 .  
+WaterDeficit:urbanin:countryBrazil   -2.400e-04    5.926e-05  -4.050 5.17e-05 ***
+WaterDeficit:urbanin:countryother    -2.348e-05    2.895e-05  -0.811 0.417489    
+WaterDeficit_2:urbanin:countryEurope -4.810e-07    6.544e-08  -7.350 2.16e-13 ***
+WaterDeficit_2:urbanin:countryChina  -2.340e-07    3.470e-08  -6.744 1.64e-11 ***
+WaterDeficit_2:urbanin:countryIndia   2.485e-07    8.276e-08   3.003 0.002681 ** 
+WaterDeficit_2:urbanin:countryBrazil  1.537e-07    4.909e-08   3.131 0.001747 ** 
+WaterDeficit_2:urbanin:countryother   3.773e-08    1.480e-08   2.549 0.010826 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07396 on 284769 degrees of freedom
+Multiple R-squared(full model): 0.8567   Adjusted R-squared: 0.8523 
+Multiple R-squared(proj model): 0.364   Adjusted R-squared: 0.3447 
+F-statistic(full model, *iid*):196.3 on 8671 and 284769 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 30.51 on 45 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = FVC ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:country + Seasonalityindex_2:country +      urban:country + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:country + Seasonalityindex_2:urban:country +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.62603 -0.03699 -0.00277  0.03564  0.63939 
+
+Coefficients:
+                                           Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                         -2.554e+00    2.029e+00  -1.259  0.20815    
+Seasonalityindex_2                        7.010e+01    3.858e+01   1.817  0.06925 .  
+urbanin                                   1.260e-01    1.545e-02   8.158 4.11e-16 ***
+WaterDeficit                             -3.444e-04    2.911e-05 -11.829  < 2e-16 ***
+AverageTemperature                        7.852e-03    1.731e-03   4.537 5.81e-06 ***
+TemperatureRange                          9.348e-03    2.061e-03   4.536 5.85e-06 ***
+WindSpeed                                 3.156e-02    7.123e-03   4.431 9.56e-06 ***
+Elevation                                -7.444e-06    1.241e-05  -0.600  0.54853    
+Latitude                                 -4.060e-03    5.677e-03  -0.715  0.47454    
+Precipitation                            -2.197e-05    2.665e-05  -0.824  0.40986    
+SoilMoisture                              7.208e-05    1.389e-05   5.188 2.19e-07 ***
+SoilPH                                   -3.852e-03    1.162e-04 -33.137  < 2e-16 ***
+GDP_per_capita_PPP                        3.264e-08    6.836e-08   0.477  0.63307    
+HDI                                       1.390e-01    1.867e-02   7.445 1.10e-13 ***
+Population                               -9.276e-06    1.775e-06  -5.226 1.79e-07 ***
+ImperviousSurface                        -4.332e-02    1.841e-02  -2.353  0.01863 *  
+HumanSettlement                          -1.411e-07    4.415e-08  -3.196  0.00140 ** 
+CityArea                                  2.937e-05    2.096e-05   1.401  0.16129    
+Seasonalityindex:countryEurope           -4.712e+00    2.776e+00  -1.698  0.08964 .  
+Seasonalityindex:countryChina            -2.255e+00    2.355e+00  -0.958  0.33824    
+Seasonalityindex:countryIndia             2.789e+00    2.522e+00   1.106  0.26875    
+Seasonalityindex:countryBrazil            6.782e+00    3.245e+00   2.090  0.03667 *  
+Seasonalityindex:countryother             3.536e+00    2.129e+00   1.661  0.09674 .  
+Seasonalityindex_2:countryEurope          2.845e+02    1.652e+02   1.722  0.08520 .  
+Seasonalityindex_2:countryChina          -3.316e+01    4.125e+01  -0.804  0.42157    
+Seasonalityindex_2:countryIndia          -8.810e+01    3.963e+01  -2.223  0.02624 *  
+Seasonalityindex_2:countryBrazil         -9.487e+01    4.729e+01  -2.006  0.04486 *  
+Seasonalityindex_2:countryother          -7.224e+01    3.943e+01  -1.832  0.06702 .  
+urbanin:countryEurope                    -1.670e-01    1.207e-02 -13.836  < 2e-16 ***
+urbanin:countryChina                      1.486e-01    1.461e-02  10.177  < 2e-16 ***
+urbanin:countryIndia                      1.200e-01    4.774e-02   2.513  0.01200 *  
+urbanin:countryBrazil                    -3.286e-01    3.183e-02 -10.324  < 2e-16 ***
+urbanin:countryother                      3.512e-02    1.270e-02   2.765  0.00571 ** 
+Seasonalityindex:urbanin                 -2.547e+00    1.804e+00  -1.411  0.15819    
+Seasonalityindex_2:urbanin               -6.862e+01    5.523e+01  -1.243  0.21407    
+Seasonalityindex:urbanin:countryEurope    1.396e+01    2.898e+00   4.819 1.48e-06 ***
+Seasonalityindex:urbanin:countryChina    -7.027e+00    2.021e+00  -3.477  0.00051 ***
+Seasonalityindex:urbanin:countryIndia     2.336e+00    2.366e+00   0.987  0.32351    
+Seasonalityindex:urbanin:countryBrazil    1.119e+01    2.871e+00   3.899 9.76e-05 ***
+Seasonalityindex:urbanin:countryother     2.420e+00    1.927e+00   1.256  0.20908    
+Seasonalityindex_2:urbanin:countryEurope -3.292e+02    1.728e+02  -1.905  0.05680 .  
+Seasonalityindex_2:urbanin:countryChina   1.545e+02    5.864e+01   2.635  0.00842 ** 
+Seasonalityindex_2:urbanin:countryIndia   6.126e+01    5.643e+01   1.086  0.27768    
+Seasonalityindex_2:urbanin:countryBrazil -5.019e+01    6.399e+01  -0.784  0.43288    
+Seasonalityindex_2:urbanin:countryother   5.605e+01    5.623e+01   0.997  0.31891    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07438 on 210642 degrees of freedom
+Multiple R-squared(full model): 0.8355   Adjusted R-squared: 0.8306 
+Multiple R-squared(proj model): 0.206   Adjusted R-squared: 0.1825 
+F-statistic(full model, *iid*):171.3 on 6243 and 210642 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 78.22 on 45 and 6194 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + WaterDeficit + WaterDeficit_2 + urban +      WaterDeficit:country + WaterDeficit_2:country + urban:country +      WaterDeficit:urban + WaterDeficit_2:urban + WaterDeficit:urban:country +      WaterDeficit_2:urban:country + Seasonalityindex + AverageTemperature +      TemperatureRange + WindSpeed + Elevation + Latitude + Precipitation +      SoilMoisture + SoilPH + GDP_per_capita_PPP + HDI + Population +      ImperviousSurface + HumanSettlement + CityArea | CityID +      year | 0 | CityID, data = merged_dt_WaterDeficit) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-725.49  -52.68   -1.90   51.28  773.66 
+
+Coefficients:
+                                       Estimate Cluster s.e. t value Pr(>|t|)    
+WaterDeficit                         -2.599e-01    8.668e-02  -2.999 0.002719 ** 
+WaterDeficit_2                       -8.333e-05    3.649e-05  -2.284 0.022415 *  
+urbanin                              -3.979e+02    9.133e+00 -43.566  < 2e-16 ***
+Seasonalityindex                     -6.555e+02    3.011e+02  -2.177 0.029475 *  
+AverageTemperature                    3.277e+00    2.028e+00   1.616 0.106214    
+TemperatureRange                      1.547e+01    2.455e+00   6.301 3.10e-10 ***
+WindSpeed                             3.439e+01    7.588e+00   4.533 5.90e-06 ***
+Elevation                             3.029e-02    1.490e-02   2.033 0.042038 *  
+Latitude                             -8.762e+00    6.641e+00  -1.319 0.187082    
+Precipitation                         1.865e-02    2.201e-02   0.847 0.396768    
+SoilMoisture                          3.118e-02    1.358e-02   2.296 0.021723 *  
+SoilPH                               -4.037e+00    1.246e-01 -32.403  < 2e-16 ***
+GDP_per_capita_PPP                   -4.086e-04    6.390e-05  -6.395 1.69e-10 ***
+HDI                                   4.153e+02    2.142e+01  19.390  < 2e-16 ***
+Population                           -7.749e-03    9.138e-04  -8.479  < 2e-16 ***
+ImperviousSurface                     2.051e+02    1.115e+01  18.389  < 2e-16 ***
+HumanSettlement                      -2.630e-04    2.364e-05 -11.129  < 2e-16 ***
+CityArea                              7.183e-03    1.094e-02   0.657 0.511424    
+WaterDeficit:countryEurope           -9.777e-01    1.345e-01  -7.268 3.97e-13 ***
+WaterDeficit:countryChina             9.273e-02    1.308e-01   0.709 0.478377    
+WaterDeficit:countryIndia            -1.311e+00    6.929e-01  -1.891 0.058612 .  
+WaterDeficit:countryBrazil           -4.341e-01    1.751e-01  -2.479 0.013191 *  
+WaterDeficit:countryother            -4.792e-01    1.022e-01  -4.691 2.76e-06 ***
+WaterDeficit_2:countryEurope          6.677e-04    1.610e-04   4.148 3.38e-05 ***
+WaterDeficit_2:countryChina          -1.379e-04    1.001e-04  -1.379 0.168014    
+WaterDeficit_2:countryIndia           4.797e-04    3.018e-04   1.589 0.112020    
+WaterDeficit_2:countryBrazil          3.123e-04    1.193e-04   2.619 0.008835 ** 
+WaterDeficit_2:countryother           1.894e-04    4.163e-05   4.550 5.44e-06 ***
+urbanin:countryEurope                -3.782e+01    9.315e+00  -4.060 4.94e-05 ***
+urbanin:countryChina                 -5.836e+01    8.634e+00  -6.759 1.48e-11 ***
+urbanin:countryIndia                 -9.514e+01    7.014e+01  -1.356 0.174986    
+urbanin:countryBrazil                -1.469e+02    1.725e+01  -8.517  < 2e-16 ***
+urbanin:countryother                 -2.836e+01    7.817e+00  -3.628 0.000287 ***
+WaterDeficit:urbanin                  2.838e-01    1.703e-02  16.664  < 2e-16 ***
+WaterDeficit_2:urbanin               -8.070e-05    8.597e-06  -9.387  < 2e-16 ***
+WaterDeficit:urbanin:countryEurope    2.585e-01    4.882e-02   5.295 1.22e-07 ***
+WaterDeficit:urbanin:countryChina     1.793e-01    2.942e-02   6.093 1.15e-09 ***
+WaterDeficit:urbanin:countryIndia     1.028e-01    1.372e-01   0.749 0.453763    
+WaterDeficit:urbanin:countryBrazil    5.278e-02    7.333e-02   0.720 0.471682    
+WaterDeficit:urbanin:countryother    -8.893e-03    2.018e-02  -0.441 0.659473    
+WaterDeficit_2:urbanin:countryEurope -3.170e-04    5.290e-05  -5.992 2.15e-09 ***
+WaterDeficit_2:urbanin:countryChina  -2.148e-05    2.250e-05  -0.954 0.339948    
+WaterDeficit_2:urbanin:countryIndia   3.715e-06    6.657e-05   0.056 0.955503    
+WaterDeficit_2:urbanin:countryBrazil -2.098e-05    5.991e-05  -0.350 0.726210    
+WaterDeficit_2:urbanin:countryother   3.248e-05    9.763e-06   3.326 0.000884 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 91.14 on 284769 degrees of freedom
+Multiple R-squared(full model): 0.8821   Adjusted R-squared: 0.8785 
+Multiple R-squared(proj model): 0.4954   Adjusted R-squared:  0.48 
+F-statistic(full model, *iid*):245.8 on 8671 and 284769 DF, p-value: < 2.2e-16 
+F-statistic(proj model): 209.5 on 45 and 8622 DF, p-value: < 2.2e-16 
+
+
+
+Call:
+   felm(formula = NPP ~ 1 + Seasonalityindex + Seasonalityindex_2 +      urban + Seasonalityindex:country + Seasonalityindex_2:country +      urban:country + Seasonalityindex:urban + Seasonalityindex_2:urban +      Seasonalityindex:urban:country + Seasonalityindex_2:urban:country +      WaterDeficit + AverageTemperature + TemperatureRange + WindSpeed +      Elevation + Latitude + Precipitation + SoilMoisture + SoilPH +      GDP_per_capita_PPP + HDI + Population + ImperviousSurface +      HumanSettlement + CityArea | CityID + year | 0 | CityID,      data = merged_dt_Seasonalityindex) 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-788.06  -50.28   -3.31   50.08  741.79 
+
+Coefficients:
+                                           Estimate Cluster s.e. t value Pr(>|t|)    
+Seasonalityindex                         -4.142e+03    2.060e+03  -2.011 0.044411 *  
+Seasonalityindex_2                        1.350e+05    4.451e+04   3.032 0.002438 ** 
+urbanin                                  -1.686e+02    1.042e+01 -16.180  < 2e-16 ***
+WaterDeficit                             -5.750e-01    3.293e-02 -17.459  < 2e-16 ***
+AverageTemperature                        6.609e+00    1.683e+00   3.926 8.73e-05 ***
+TemperatureRange                          1.299e+01    2.606e+00   4.984 6.39e-07 ***
+WindSpeed                                 6.684e+01    9.302e+00   7.185 7.49e-13 ***
+Elevation                                -4.599e-02    1.397e-02  -3.293 0.000995 ***
+Latitude                                 -2.100e+01    7.233e+00  -2.904 0.003699 ** 
+Precipitation                            -8.677e-02    3.297e-02  -2.632 0.008508 ** 
+SoilMoisture                              7.457e-02    1.591e-02   4.688 2.82e-06 ***
+SoilPH                                   -3.946e+00    1.491e-01 -26.459  < 2e-16 ***
+GDP_per_capita_PPP                       -2.553e-04    5.558e-05  -4.593 4.46e-06 ***
+HDI                                       2.272e+02    2.171e+01  10.467  < 2e-16 ***
+Population                               -9.263e-03    1.560e-03  -5.936 3.08e-09 ***
+ImperviousSurface                         1.579e+02    1.211e+01  13.034  < 2e-16 ***
+HumanSettlement                          -1.142e-04    3.255e-05  -3.510 0.000452 ***
+CityArea                                  1.819e-02    1.681e-02   1.082 0.279259    
+Seasonalityindex:countryEurope            2.641e+03    3.388e+03   0.780 0.435644    
+Seasonalityindex:countryChina            -7.288e+03    2.583e+03  -2.822 0.004790 ** 
+Seasonalityindex:countryIndia             6.133e+03    2.643e+03   2.321 0.020341 *  
+Seasonalityindex:countryBrazil            1.446e+04    4.866e+03   2.973 0.002964 ** 
+Seasonalityindex:countryother             6.758e+03    2.236e+03   3.022 0.002522 ** 
+Seasonalityindex_2:countryEurope          3.210e+03    2.117e+05   0.015 0.987906    
+Seasonalityindex_2:countryChina          -2.863e+04    4.856e+04  -0.590 0.555507    
+Seasonalityindex_2:countryIndia          -1.710e+05    4.560e+04  -3.750 0.000178 ***
+Seasonalityindex_2:countryBrazil         -2.029e+05    6.383e+04  -3.179 0.001484 ** 
+Seasonalityindex_2:countryother          -1.525e+05    4.566e+04  -3.341 0.000841 ***
+urbanin:countryEurope                    -1.779e+02    9.328e+00 -19.077  < 2e-16 ***
+urbanin:countryChina                      1.016e+02    1.109e+01   9.156  < 2e-16 ***
+urbanin:countryIndia                      1.870e+01    3.800e+01   0.492 0.622659    
+urbanin:countryBrazil                    -2.087e+02    3.556e+01  -5.871 4.56e-09 ***
+urbanin:countryother                     -2.105e+00    8.817e+00  -0.239 0.811288    
+Seasonalityindex:urbanin                 -7.053e+03    1.253e+03  -5.630 1.89e-08 ***
+Seasonalityindex_2:urbanin                7.324e+04    3.268e+04   2.241 0.025036 *  
+Seasonalityindex:urbanin:countryEurope    1.537e+04    2.546e+03   6.038 1.65e-09 ***
+Seasonalityindex:urbanin:countryChina    -2.410e+03    1.422e+03  -1.694 0.090289 .  
+Seasonalityindex:urbanin:countryIndia     6.993e+03    1.717e+03   4.073 4.69e-05 ***
+Seasonalityindex:urbanin:countryBrazil    1.031e+04    2.769e+03   3.723 0.000199 ***
+Seasonalityindex:urbanin:countryother     5.175e+03    1.336e+03   3.875 0.000108 ***
+Seasonalityindex_2:urbanin:countryEurope -4.625e+05    1.791e+05  -2.582 0.009843 ** 
+Seasonalityindex_2:urbanin:countryChina   2.615e+04    3.576e+04   0.731 0.464729    
+Seasonalityindex_2:urbanin:countryIndia  -7.528e+04    3.376e+04  -2.230 0.025800 *  
+Seasonalityindex_2:urbanin:countryBrazil -1.092e+05    4.873e+04  -2.240 0.025110 *  
+Seasonalityindex_2:urbanin:countryother  -5.992e+04    3.340e+04  -1.794 0.072878 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 87.03 on 210642 degrees of freedom
+Multiple R-squared(full model): 0.8735   Adjusted R-squared: 0.8698 
+Multiple R-squared(proj model): 0.3742   Adjusted R-squared: 0.3557 
+F-statistic(full model, *iid*):233.1 on 6243 and 210642 DF, p-value: < 2.2e-16 
+F-statistic(proj model):   146 on 45 and 6194 DF, p-value: < 2.2e-16 
+
+
