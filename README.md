@@ -81,7 +81,7 @@ Our ideas may partly come from the papers:
 
 ## Citation
 
-Jianhua Guo†,*, Bowei Yu†,*, Jianghao Wang, Zhongchang Sun, Dong Liang, and Huadong Guo*. "Urban environments buffer vegetation structure but not ecosystem functioning under hydroclimatic stress." Submitted to Nature XXX, Sep 2026
+Jianhua Guo†,*, Bowei Yu†,*, Jianghao Wang, Zhongchang Sun, Dong Liang, and Huadong Guo*. "Urban Greening Decouples Vegetation Structure from Carbon Productivity under Hydroclimatic Stress." Submitted to Nature Plants, Nov. 2026
 
 
 
